@@ -1,0 +1,35 @@
+# Fruitish
+
+> Fresh, customized fruit boxes delivered daily in Ahmedabad, India. Fruitish offers flexible subscription plans for perfectly portioned fruits — eliminating overbuying and wastage.
+
+Fruitish is a local fruit delivery service based in Ahmedabad, Gujarat, India. Customers subscribe to daily fruit box plans (200–400 gm portions) tailored to their needs. Delivery happens before 8 AM every morning. Available on Swiggy and Zomato as well as direct subscription via WhatsApp.
+
+## Pages
+
+- [Home](https://fruitish.in/): Hero, product features, how it works, pricing plans, testimonials
+- [Blogs](https://fruitish.in/blogs.html): Nutrition tips, seasonal fruit guides, wellness articles
+- [Blog Detail](https://fruitish.in/blog-detail.html): Individual blog article page
+
+## Business Details
+
+- **Location**: Ahmedabad, Gujarat, India (PIN 380059)
+- **Phone**: +91 7600 40 6507
+- **Email**: hello@fruitish.in
+- **Hours**: 9:00 AM – 8:00 PM, Monday – Sunday
+- **Delivery**: Before 8 AM daily
+
+## Subscription Plans
+
+- Berry Berry (200 gm/day, 30 days) — ₹1999/month
+- Tropical Treat (300 gm/day, 30 days) — ₹2799/month
+- Fruitful Feast (400 gm/day, 30 days) — ₹3499/month
+- Corporate: Smart Start Pack (200 gm, workdays) — ₹1000/month
+- Corporate: Powered Pack (300 gm, workdays) — ₹1500/month
+
+## Social
+
+- Instagram: https://www.instagram.com/fruitish.in/
+- WhatsApp: https://wa.me/c/917600406507
+- LinkedIn: https://www.linkedin.com/company/fruitish-in/
+- Facebook: https://www.facebook.com/profile.php?id=61570203803189
+- X (Twitter): https://www.x.com/hey_fruitish
