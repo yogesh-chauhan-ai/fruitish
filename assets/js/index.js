@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="card h-100" >
           <div class="card-body border-bottom border-2 price-bg text-white pt-4 ps-4">
             <h3 class="fs-3 fw-normal">${plan.title}</h3>
-            <h6 class="opacity-75">${plan.subtitle}</h6>
+            <p class="opacity-75 fs-6 fw-light mb-0 mt-1">${plan.subtitle}</p>
           </div>
           <div class="price-bg p-3 text-white ps-4">
             <h4 class="fw-bold fs-5">${plan.price} <span class="fs-6 fw-normal">/Per Month</span></h4>
@@ -357,7 +357,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="card h-100" >
           <div class="card-body border-bottom border-2 price-bg text-white pt-4 ps-4">
             <h3 class="fs-3 fw-normal">${plan.title}</h3>
-            <h6 class="opacity-75">${plan.subtitle}</h6>
+            <p class="opacity-75 fs-6 fw-light mb-0 mt-1">${plan.subtitle}</p>
           </div>
           <div class="price-bg p-3 text-white ps-4">
             <h4 class="fw-bold fs-5">${plan.price} <span class="fs-6 fw-normal">/Per Month</span></h4>
