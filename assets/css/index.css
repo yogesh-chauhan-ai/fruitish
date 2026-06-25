@@ -1,0 +1,484 @@
+body {
+    font-family: "Signika";
+    overflow-x: hidden !important;
+}
+
+/* hero section css */
+.btn-light {
+    color: #01a544 !important;
+    background: white !important;
+    /* font-size: 20px; */
+}
+
+.btn-light:hover {
+    color: #01a544 !important;
+    background: white !important;
+}
+
+.btn-success {
+    background-color: #0F3213 !important;
+    /* font-size: 20px; */
+}
+
+.hero-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* choose section css */
+.choose-bg {
+    background-color: #f8f7f0;
+}
+
+/* how it works section css */
+.work-section-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    background-color: #eddd5e;
+    border-radius: 50%;
+}
+
+/* why-choose section css */
+.why-choose .card:hover {
+    background-color: white;
+}
+
+/* benefits section css */
+.number {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-size: 60px;
+    line-height: 60.99px;
+    font-family: sans-serif;
+}
+
+.benefit-col:hover .number {
+    -webkit-text-fill-color: green;
+}
+
+.benefit-col {
+    color: white;
+}
+
+.benefit-col:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* pricing css */
+.price-bg {
+    background-color: #5b8c51;
+}
+
+.price-section .btn {
+    font-size: 14px;
+}
+
+.price-section .card {
+    border-radius: 5px;
+}
+
+.price-section .btn:hover {
+    background-color: #5b8c51;
+}
+
+.pricing-card .card {
+    box-shadow: 7px 8px #e5e5e5;
+}
+
+/* testimonial css */
+.testimonial-card {
+    background-color: white;
+    border-radius: 15px;
+}
+
+.star-icon {
+    color: #ffc107;
+    font-size: 20px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* enquiry css */
+.enqury-section-bg {
+    background-image: url("../images/enquiry.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* footer css */
+.social-icons-footer {
+    width: 40px;
+    height: 40px;
+    background-color: #F8F7F0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer-above-section {
+    background-color: #eddd5e;
+}
+
+/* Responsive Typography */
+@media (min-width: 576px) {
+    .fs-16 {
+        font-size: 14px;
+    }
+
+    .fs-18 {
+        font-size: 16px;
+    }
+
+    .fs-20 {
+        font-size: 16px;
+    }
+
+    .px-10 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .fs-90 {
+        font-size: 50px;
+    }
+
+    .hero-bg {
+        display: none;
+    }
+
+    .process-w {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .fs-16 {
+        font-size: 14px;
+    }
+
+    .fs-18 {
+        font-size: 16px;
+    }
+
+    .fs-20 {
+        font-size: 18px;
+    }
+
+    .px-10 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .fs-90 {
+        font-size: 50px;
+    }
+
+    .hero-bg {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .fs-16 {
+        font-size: 16px;
+    }
+
+    .fs-18 {
+        font-size: 18px;
+    }
+
+    .fs-20 {
+        font-size: 20px;
+    }
+
+    .px-10 {
+        padding-left: 2rem;
+        padding-right: 3rem;
+    }
+
+    .fs-90 {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 991px) {
+    .px-10 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .fs-90 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1199px) {
+    .px-10 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .fs-90 {
+        font-size: 90px;
+    }
+}
+
+/* Additional Responsive Breakpoints */
+@media (max-width: 767px) {
+    .fs-16 {
+        font-size: 14px;
+    }
+
+    .fs-18 {
+        font-size: 16px;
+    }
+
+    .fs-20 {
+        font-size: 18px;
+    }
+
+    .px-10 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .fs-90 {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .fs-16 {
+        font-size: 18px;
+    }
+
+    .fs-18 {
+        font-size: 20px;
+    }
+
+    .fs-20 {
+        font-size: 22px;
+    }
+
+    .px-10 {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .fs-90 {
+        font-size: 80px;
+    }
+
+    .fs-90 {
+        font-size: 80px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .fs-16 {
+        font-size: 16px;
+    }
+
+    .fs-18 {
+        font-size: 18px;
+    }
+
+    .fs-20 {
+        font-size: 20px;
+    }
+
+    .px-10 {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .fs-90 {
+        font-size: 90px;
+    }
+
+    .fs-55 {
+        font-size: 55px;
+    }
+
+    .hero-bg {
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .process-w {
+        width: 90%;
+    }
+}
+
+/* Utility Classes */
+.nav-item .nav-link {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover {
+    color: blue;
+}
+
+.border-end {
+    border-color: #7c827b !important;
+}
+
+.social-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.social-icon.instagram {
+    background-color: #E4405F;
+}
+
+.social-icon.instagram:hover {
+    background-color: #D32E5E;
+}
+
+.social-icon.whatsapp {
+    background-color: #0ECC48;
+}
+
+.social-icon.whatsapp:hover {
+    background-color: #1BA948;
+}
+
+.social-icon.linkedin {
+    background-color: #0077B5;
+}
+
+.social-icon.linkedin:hover {
+    background-color: #005582;
+}
+
+.social-icon.twitter {
+    background-color: #1DA1F2;
+}
+
+.social-icon.twitter:hover {
+    background-color: #0C8EDA;
+}
+
+.social-icon.facebook {
+    background-color: #1877F2;
+}
+
+.social-icon.facebook:hover {
+    background-color: #0C63DB;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  /* border-bottom: 2px solid #ccc; */
+}
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: none;
+  background-color: white;
+}
+.tab.active {
+  background-color: white;
+  border-bottom: 4px solid #5b8c51;
+  font-weight: bold;
+}
+.tab-content {
+  display: none;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+}
+.tab-content.active {
+  display: block;
+}
+
+.price-section1 .btn {
+  font-size: 14px;
+}
+
+.price-section1 .card {
+  border-radius: 5px;
+}
+
+.price-section1 .btn:hover {
+  background-color: #5b8c51;
+}
+
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffc107; /* Dark background color */
+    padding: 20px;
+    border-radius: 0px;
+    color: white;
+}
+
+.stat-item {
+    text-align: center;
+    max-width: 150px;
+}
+
+.stat-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.stat-info h2 {
+    font-size: 24px;
+    margin: 0;
+    color: black; /* Highlighted number color */
+}
+
+.stat-info p {
+    font-size: 16px;
+    margin: 5px 0 0;
+}

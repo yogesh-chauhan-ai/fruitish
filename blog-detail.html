@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Daily Fruit Intake Matters — Fruitish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <style>
+    .post-hero {
+      background: var(--forest-deep, #07190A);
+      padding: 140px 0 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .post-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 60px;
+      background: var(--cream, #FDFAF4);
+      clip-path: ellipse(60% 100% at 50% 100%);
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .82rem;
+      color: rgba(255,255,255,.55);
+      text-decoration: none;
+      margin-bottom: 28px;
+      transition: color .3s;
+    }
+    .back-link:hover { color: white; }
+    .post-hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 700;
+      line-height: 1.1;
+      color: white;
+      letter-spacing: -.025em;
+      max-width: 760px;
+    }
+    .post-meta { color: rgba(255,255,255,.45); font-size: .82rem; font-weight: 300; margin-top: 20px; }
+    .post-meta span + span::before { content: '·'; margin: 0 10px; }
+
+    .post-body { max-width: 720px; }
+    .post-body p { font-size: 1rem; font-weight: 300; color: #3A4A3C; line-height: 1.8; margin-bottom: 1.3rem; }
+    .post-body h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: var(--forest, #0F3213);
+      margin-top: 2.5rem;
+      margin-bottom: .9rem;
+      letter-spacing: -.015em;
+    }
+    .post-body ul { padding-left: 1.4rem; margin-bottom: 1.3rem; }
+    .post-body ul li { font-size: 1rem; font-weight: 300; color: #3A4A3C; line-height: 1.8; margin-bottom: .4rem; }
+    .post-body strong { font-weight: 600; color: var(--forest, #0F3213); }
+
+    .post-cta-box {
+      background: var(--sand, #F0EBE0);
+      border-left: 4px solid var(--sage, #5B8C51);
+      border-radius: 12px;
+      padding: 24px 28px;
+      margin-top: 3rem;
+    }
+
+    .sidebar-card {
+      background: var(--cream, #FDFAF4);
+      border: 1px solid rgba(91,140,81,.12);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .sidebar-card h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--forest, #0F3213);
+      margin-bottom: 20px;
+    }
+    .related-item {
+      display: flex;
+      gap: 14px;
+      text-decoration: none;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(91,140,81,.1);
+      transition: opacity .3s;
+    }
+    .related-item:last-child { border-bottom: none; }
+    .related-item:hover { opacity: .75; }
+    .related-item img { width: 72px; height: 56px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
+    .related-item-title { font-size: .88rem; font-weight: 500; color: var(--forest, #0F3213); line-height: 1.35; }
+    .related-item-date { font-size: .75rem; color: var(--muted, #7A8C7C); margin-top: 4px; font-weight: 300; }
+
+    .cta-green {
+      background: var(--forest, #0F3213);
+      border-radius: 20px;
+      padding: 28px;
+      color: white;
+    }
+    .cta-green h5 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.4rem; font-weight: 600; }
+    .cta-green p { font-size: .88rem; font-weight: 300; opacity: .75; }
+    .cta-green .btn { background: var(--gold, #EDDD5E); color: var(--forest, #0F3213); border-radius: 999px; font-weight: 600; font-family: 'Outfit', sans-serif; font-size: .85rem; padding: 10px 24px; width: 100%; }
+    .cta-green .btn:hover { background: #f5e95a; color: var(--forest, #0F3213); }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="site-header scrolled" id="siteHeader">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-10">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Fruitish" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ps-3" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#product">Why us?</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#plan">Plans</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="blogs.html">Blogs</a></li>
+          </ul>
+          <div class="nav-social ms-auto">
+            <a href="https://www.instagram.com/fruitish.in/" target="_blank" class="nav-social-icon instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/c/917600406507" target="_blank" class="nav-social-icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/company/fruitish-in/" target="_blank" class="nav-social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61570203803189&mibextid=ZbWKwL" target="_blank" class="nav-social-icon facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Post Hero -->
+  <div class="post-hero">
+    <div class="container">
+      <a href="blogs.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Journal</a>
+      <span class="section-badge light" style="margin-bottom:18px;">Nutrition</span>
+      <h1>Why Daily Fruit Intake<br>Matters for Your Health</h1>
+      <div class="post-meta">
+        <span>June 10, 2024</span>
+        <span>5 min read</span>
+        <span>By Fruitish Team</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <main class="container" style="padding-top: 64px; padding-bottom: 96px;">
+    <div class="row g-5">
+      <!-- Article -->
+      <div class="col-lg-8">
+        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=960&q=80" class="img-fluid rounded-4 mb-5 w-100" alt="Daily Fruits" style="max-height:460px; object-fit:cover;" />
+
+        <article class="post-body">
+          <p>Fruits are nature's most complete food — packed with vitamins, minerals, antioxidants, fiber, and natural sugars that fuel your body through the day. Yet most people don't consume nearly enough of them. The World Health Organization recommends at least 400g of fruits and vegetables daily, but the average Indian consumes far less.</p>
+
+          <h2>The Science Behind Daily Fruit Consumption</h2>
+          <p>Research consistently shows that people who eat fruit daily have lower risks of heart disease, stroke, type 2 diabetes, and certain cancers. The phytonutrients in fruits work synergistically — meaning a whole apple gives you far more benefit than any vitamin supplement could replicate.</p>
+          <p>Beyond disease prevention, fruits directly impact how you feel day-to-day. Their natural sugars provide quick energy without the crash of processed sweets. Their water content keeps you hydrated. Their fiber keeps your gut microbiome thriving.</p>
+
+          <h2>Key Benefits of Eating Fruits Every Day</h2>
+          <ul>
+            <li><strong>Boosted immunity:</strong> Vitamin C in citrus fruits, guavas, and kiwis strengthens white blood cell function.</li>
+            <li><strong>Better digestion:</strong> Dietary fiber from bananas, papayas, and apples feeds good gut bacteria and prevents constipation.</li>
+            <li><strong>Glowing skin:</strong> Antioxidants in berries and mangoes neutralize free radicals that cause premature aging.</li>
+            <li><strong>Heart health:</strong> Potassium in bananas and watermelons helps regulate blood pressure.</li>
+            <li><strong>Weight management:</strong> High fiber and water content increases satiety, helping you feel full without overeating.</li>
+            <li><strong>Mental clarity:</strong> Flavonoids in berries have been linked to improved memory and reduced cognitive decline.</li>
+          </ul>
+
+          <h2>How Much Is Enough?</h2>
+          <p>A practical daily target is 200–400g of mixed fruits, spread across the day. A 200g portion translates to roughly: one medium apple + one banana, or one cup of mixed papaya and pineapple, or two medium oranges.</p>
+          <p>Variety matters more than quantity alone. Different fruits offer different phytonutrients — so rotating between seasonal options ensures you get the full spectrum of benefits.</p>
+
+          <h2>The Freshness Factor</h2>
+          <p>Nutrient levels in fruits decline after harvest. Vitamin C, for example, can drop by 15–50% within a week of picking, depending on storage conditions. This is why sourcing from local farms and consuming within days of harvest makes a meaningful nutritional difference — which is exactly what Fruitish prioritizes with every delivery.</p>
+
+          <h2>Making It Effortless</h2>
+          <p>The biggest barrier most people report isn't willpower — it's inconvenience. You forget to buy, you buy too much and it goes bad, or you just don't know what to buy. That's the problem Fruitish was built to solve: a daily, perfectly-portioned fruit box delivered to your door, so the healthy choice is always the easy choice.</p>
+
+          <div class="post-cta-box">
+            <p class="mb-3" style="font-weight:600; color:var(--forest); font-family:'Cormorant Garamond',serif; font-size:1.2rem;">Ready to make daily fruits effortless?</p>
+            <a href="https://wa.me/c/917600406507" target="_blank" class="btn-fruitish">Subscribe on WhatsApp <i class="fab fa-whatsapp ms-1"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="sidebar-card">
+          <h4>Related Articles</h4>
+          <a href="blog-detail.html" class="related-item">
+            <img src="https://images.unsplash.com/photo-1490885578174-acda8905c2c6?w=200&q=70" alt="" />
+            <div>
+              <div class="related-item-title">A Complete Guide to Seasonal Fruits in India</div>
+              <div class="related-item-date">May 22, 2024</div>
+            </div>
+          </a>
+          <a href="blog-detail.html" class="related-item">
+            <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?w=200&q=70" alt="" />
+            <div>
+              <div class="related-item-title">5 Ways to Stop Wasting Fruits at Home</div>
+              <div class="related-item-date">Apr 18, 2024</div>
+            </div>
+          </a>
+          <a href="blog-detail.html" class="related-item">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=200&q=70" alt="" />
+            <div>
+              <div class="related-item-title">Best Fruits for Weight Loss &amp; Fitness Goals</div>
+              <div class="related-item-date">Mar 5, 2024</div>
+            </div>
+          </a>
+        </div>
+
+        <div class="cta-green">
+          <h5>Start Your Fruit Journey</h5>
+          <p>Fresh, portioned fruits delivered daily. Plans from ₹1999/month.</p>
+          <a href="index.html#plan" class="btn">View All Plans</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Bar -->
+  <div class="footer-bar">
+    <div class="container">
+      <div class="d-md-flex justify-content-between py-4 align-items-center">
+        <ul class="footer-tags"><li>Fruits</li><li>Organic</li><li>Foods</li><li>Freshness</li></ul>
+        <div class="footer-contact">
+          <a href="tel:+917600406507">+91 7600 40 6507</a>
+          <a href="mailto:hello@fruitish.com">hello@fruitish.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Main -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row py-5 gy-5 align-items-center">
+        <div class="col-lg-4 d-flex flex-column gap-3">
+          <img src="assets/images/logo.png" alt="Fruitish" class="footer-giant-logo" />
+          <p class="footer-tagline">Fresh fruits. Your way. Every day.</p>
+          <div class="d-flex gap-2">
+            <a href="https://www.facebook.com/profile.php?id=61570203803189" class="social-icons-footer" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.x.com/hey_fruitish" class="social-icons-footer" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/fruitish-in/" class="social-icons-footer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/fruitish.in/" class="social-icons-footer" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row gy-4">
+            <div class="col-md-4">
+              <p class="footer-heading">Useful Links</p>
+              <ul class="list-unstyled d-flex flex-column gap-2">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#plan">Plans</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <p class="footer-heading">Working Hours</p>
+              <p style="color:rgba(255,255,255,.5);font-weight:300;font-size:.88rem;line-height:1.7;">Available Everyday<br>9:00 AM – 8:00 PM</p>
+            </div>
+            <div class="col-md-4">
+              <p class="footer-heading">Our Address</p>
+              <p style="color:rgba(255,255,255,.5);font-weight:300;font-size:.88rem;line-height:1.7;">F-24, Hariom Park, Jay Ambe Nagar Road, Thaltej, Ahmedabad, IN 380059</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="border-color:rgba(255,255,255,.08);margin:0 0 20px;" />
+      <div class="d-flex flex-wrap justify-content-between gap-2 pb-4">
+        <div class="d-flex gap-3"><a href="#">Terms &amp; Conditions</a><a href="#">Privacy Policy</a></div>
+        <span style="color:rgba(255,255,255,.35);font-size:.8rem;">Copyright &copy; 2024 Fruitish. All Rights Reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
